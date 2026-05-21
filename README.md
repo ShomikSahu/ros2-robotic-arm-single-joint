@@ -1,16 +1,25 @@
-# My Robot ROS2 Package
+# ROS2 Robotic Arm - Single Joint
 
-A simple ROS2 Humble robotic arm package with:
-- URDF model
-- Publisher/subscriber examples
+A ROS2 Humble robotic arm package featuring:
+- URDF-based robot modeling
 - RViz2 visualization
+- Launch file integration
+- Python publisher/subscriber ROS2 nodes
 
-## Structure
+## Features
+- Single revolute joint robotic arm
+- RViz2 visualization support
+- joint_state_publisher_gui integration
+- ROS2 launch support
 
-- `urdf/` → robot description
-- `my_robot/` → Python ROS2 nodes
+## Technologies
+- ROS2 Humble
+- URDF
+- RViz2
+- Python
+- colcon
 
-## Run Robot State Publisher
+## Run
 
 ```bash
-ros2 run robot_state_publisher robot_state_publisher --ros-args -p robot_description:="$(cat urdf/robotic_arm.urdf)"
+ros2 launch my_robot display.launch.py
