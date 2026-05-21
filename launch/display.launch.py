@@ -9,7 +9,7 @@ def generate_launch_description():
 
     pkg_path = get_package_share_directory('my_robot')
 
-    urdf_file = os.path.join(pkg_path, 'urdf', 'robotic_arm.urdf')
+    urdf_file = os.path.join(pkg_path, 'urdf', 'robotic_arm_4dof.urdf')
 
     with open(urdf_file, 'r') as infp:
         robot_description = infp.read()
